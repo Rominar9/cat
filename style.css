@@ -7,54 +7,7 @@
 }
 
 body {
-  margin: 0;a<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <title>Cat Photos - Kitty Shelter</title>
-</head>
-<body>
-
-  <header>
-    <div class="logo-container">
-      <img src="favicon.png" alt="Kitty Shelter Logo" class="logo">
-      <h1>Cat Photos</h1>
-    </div>
-  </header>
-
-  <section class="flashcards">
-
-    <!-- Repeat this block for each of the 20 cat photos -->
-    <div class="card">
-      <img src="cat1.jpg" alt="Cat 1" class="cat-photo">
-      <h2>Cat Name</h2>
-      <p>Short info about this cat's story, personality, etc.</p>
-    </div>
-
-    <!-- Add other cat cards here -->
-    <div class="card">
-      <img src="cat2.jpg" alt="Cat 2" class="cat-photo">
-      <h2>Cat 2 Name</h2>
-      <p>Short info about this cat's story, personality, etc.</p>
-    </div>
-
-    <div class="card">
-      <img src="cat3.jpg" alt="Cat 3" class="cat-photo">
-      <h2>Cat 3 Name</h2>
-      <p>Short info about this cat's story, personality, etc.</p>
-    </div>
-
-    <!-- Repeat for all 20 cats -->
-
-  </section>
-
-  <footer class="footer">© 2025 Kitty Shelter</footer>
-
-</body>
-</html>
-
+  margin: 0;
   font-family: Arial, sans-serif;
   background-color: var(--c1);
   color: var(--c5);
@@ -119,16 +72,14 @@ nav a:hover {
 }
 
 /* ------------------------------ */
-/* FLASHCARDS (Horizontal Layout) */
+/* FLASHCARDS (Vertical Layout) */
 /* ------------------------------ */
 
-.flashcards-horizontal {
-  display: flex;
-  justify-content: space-around;
+.flashcards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 2rem;
   padding: 3rem;
-  overflow-x: scroll;
-  margin-bottom: 2rem;
 }
 
 .card {
@@ -138,7 +89,6 @@ nav a:hover {
   border-radius: 18px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
-  min-width: 260px;
   text-align: center;
 }
 
