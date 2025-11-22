@@ -8,8 +8,6 @@
   --shadow-hover: 0 10px 22px rgba(0,0,0,0.18);
 }
 
-/* ------------------------------ */
-/* General */
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -28,7 +26,6 @@ p {
   line-height: 1.6;
 }
 
-/* ------------------------------ */
 /* Header */
 header {
   background-color: var(--c2);
@@ -59,11 +56,10 @@ header h1 {
   letter-spacing: 2px;
 }
 
-/* ------------------------------ */
 /* Flashcards / Gallery */
 .flashcards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 2.5rem;
   padding: 3rem;
   justify-items: center;
@@ -74,11 +70,11 @@ header h1 {
   border: 3px solid var(--c2);
   border-radius: 18px;
   box-shadow: var(--shadow-soft);
-  text-align: center;
+  text-align: left;
   overflow: hidden;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   width: 100%;
-  max-width: 350px;
+  max-width: 360px;
 }
 
 .card:hover {
@@ -89,22 +85,42 @@ header h1 {
 .card h2 {
   font-size: 1.6rem;
   color: var(--c4);
-  margin: 1rem 0 0.5rem 0;
+  margin: 1rem 1rem 0.5rem 1rem;
 }
 
 .card p {
   font-size: 1rem;
   color: var(--c5);
-  padding: 0 1rem 1rem 1rem;
+  padding: 0 1rem 0.8rem 1rem;
 }
 
+/* Cat Photo */
 .cat-photo {
   width: 100%;
   height: auto;
   border-bottom: 4px solid var(--c2);
 }
 
-/* ------------------------------ */
+/* Back to Homepage Button */
+.back-home {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.back-home-button {
+  background-color: var(--c4);
+  color: var(--c1);
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: transform 0.3s ease;
+}
+
+.back-home-button:hover {
+  transform: scale(1.05);
+}
+
 /* Footer */
 .footer {
   background-color: var(--c5);
